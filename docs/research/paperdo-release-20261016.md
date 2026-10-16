@@ -1,6 +1,6 @@
 # 纸序：大陆发布、收款与部署路径首轮研究
 
-核查日期：2026-10-16。关联 [研究票 #4](https://github.com/The-Ignorant-Person/todo-app/issues/4) 与 [规格地图 #1](https://github.com/The-Ignorant-Person/todo-app/issues/1)。状态：**公开资料研究完成第一轮；主体选择、渠道准入及实际申请未完成**。
+核查日期：2026-10-16。关联 [研究中国大陆服务的发布支付与运行资源路径](https://github.com/The-Ignorant-Person/todo-app/issues/4) 与 [纸序 Paperdo 全端产品规格与复用决策地图](https://github.com/The-Ignorant-Person/todo-app/issues/1)。状态：**公开资料研究完成第一轮；主体选择、渠道准入及实际申请未完成**。
 
 研究对象是免费版加高级会员的全端效率工具。本文不包含项目所有者的个人事实、设备、域名或账号状态；没有注册、签约、付费、部署或递交材料。本文区分开发者账号、应用分发、支付产品和经营资质；其中一项通过不能替代其余项。
 
