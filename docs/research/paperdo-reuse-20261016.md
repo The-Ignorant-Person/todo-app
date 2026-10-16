@@ -1,6 +1,6 @@
 # 纸序复用路线：成品底座改造与成熟组件组合
 
-日期：2026-10-16（Asia/Shanghai）。工作票：[Issue #3](https://github.com/The-Ignorant-Person/todo-app/issues/3)，所属地图：[Issue #1](https://github.com/The-Ignorant-Person/todo-app/issues/1)。本报告是规格与决策的证据输入，不批准技术栈，不开始产品实现。
+日期：2026-10-16（Asia/Shanghai）。工作票：[比较成品底座改造与成熟组件组合的适配证据](https://github.com/The-Ignorant-Person/todo-app/issues/3)，所属地图：[纸序 Paperdo 全端产品规格与复用决策地图](https://github.com/The-Ignorant-Person/todo-app/issues/1)。本报告是规格与决策的证据输入，不批准技术栈，不开始产品实现。
 
 ## 结论
 
