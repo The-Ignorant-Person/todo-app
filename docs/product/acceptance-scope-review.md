@@ -85,6 +85,29 @@
 
 穿戴补证入口（非穷尽清单）：[华为 GT](https://consumer.huawei.com/cn/support/content/zh-cn15878302/)、[华为 FIT](https://consumer.huawei.com/cn/support/content/zh-cn15903440/)、[华为 WATCH 对应清单](https://consumer.huawei.com/cn/support/content/zh-cn16053381/)、[小米 Watch S1](https://www.mi.com/xiaomiwatchs1)、[小米 Watch S1 Pro](https://www.mi.com/xiaomiwatchs1pro)、[小米 Watch Color 2](https://www.mi.com/xiaomiwatchcolor2)。部分条目对配对手机系统有明确限制，后续必须逐组合提取，不能把产品系列名称直接冻结成支持承诺。
 
+## 下一轮兼容目标提案（尚待用户确认）
+
+以下是纸序自己的需求建议，不是候选技术已经通过验证，也不宣称滴答未公开的下限已被查明。
+
+| 问题 | 推荐目标 | 取舍与验收 |
+| --- | --- | --- |
+| Q7 苹果端下限 | iOS／iPadOS 15.5、macOS 12、watchOS 9 作为首发兼容下限；macOS 保留 Intel 与 Apple Silicon；系统特有功能按单项门槛显示 | 与已查参照商店下限对齐；各下限系统安装、核心操作、升级和降级提示单独验收。新版独有的小组件不强求旧系统提供。后续架构必须满足，不能静默提高下限 |
+| Q8 Windows 架构 | Windows 10／11，x86（32 位）、x64、ARM64 均保留为首发目标；具体 Windows 版本与版本分支仍需下钻 | 与参照三个下载入口一致；每个架构独立验收安装、启动、升级、快捷入口和提醒。保留 x86 会缩小技术选择，不能用即将停止维护的框架版本作为长期默认方案 |
+| Q9 Web 与扩展 | Web 支持 Chrome、Edge、Firefox、Safari；基线冻结时各最近两个稳定主版本，加仍维护的 Firefox ESR。扩展独立覆盖 Chrome／Edge／Firefox，邮件插件另列 | 固定清单记录实际版本、操作系统与日期；不由原生客户端下限推导 Web 支持。Safari 桌面与 iPhone／iPad 各自验证；不额外声称 Safari 扩展在参照范围内 |
+
+Android、HarmonyOS、Linux 和穿戴设备组合尚未提出最终完整版本清单，继续补证后提出明确目标；当前 Q7–Q9 不能作为全部兼容范围冻结依据。
+
+本轮补证仍未取得 Android 的最低 SDK、HarmonyOS 原生包的最低系统，以及 UOS／麒麟／Deepin／Fedora 等发行版的确切版本要求。现有商店与下载入口只证明包或发行版名称存在；这些下限不能作为已核实的参照事实直接填写。
+
+### 候选框架约束证据（2026-10-17）
+
+- [Flutter 支持矩阵](https://docs.flutter.dev/reference/supported-platforms)：本次官方文档对应 3.47，Windows 10／11 仅 x64、ARM64；macOS 12 起；iOS 15 起；Android API 24 起。没有 Windows x86 官方支持目标。原生 iOS 与 Web Safari 支持下限也不同，不能混为一个能力。
+- [Tauri Windows 安装器文档](https://v2.tauri.app/distribute/windows-installer/)保留 i686／x64／ARM64 构建路径；[配置文档](https://v2.tauri.app/reference/config/)默认部署值不是所有插件的兼容性证明。[Linux 文档](https://v2.tauri.app/distribute/debian/)建议以目标最旧环境构建，列 Ubuntu 22.04／Debian 12 为 WebKitGTK 4.1 基线示例。
+- [Electron 44 发布说明](https://www.electronjs.org/blog/electron-44-0)与 [v44.8.0 README](https://github.com/electron/electron/blob/v44.8.0/README.md)：macOS 13 起，Windows 10 起，已移除 Windows ia32 官方预编译包；[Electron 43 说明](https://www.electronjs.org/blog/electron-43-0)将其列为最后 32 位系列，并注明 2027 年 1 月结束支持。因此不能把留守旧 Electron 当成无维护代价的方案。
+- 三者均不能从已列平台支持表直接证明覆盖原生 HarmonyOS、watchOS 或浏览器扩展。这些仍需独立实现与验证路径。
+
+上述仅为范围取舍所需事实，不选择产品框架，不等于依赖已获准进入产品。
+
 ## 后续票的责任边界
 
 - 领域契约票：状态、重复、共享权限、历史／恢复、迁移、同步冲突的具体预期。
