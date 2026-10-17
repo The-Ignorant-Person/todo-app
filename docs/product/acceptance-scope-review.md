@@ -2,6 +2,8 @@
 
 更新：2026-10-17。状态：范围候选，未冻结。供 [冻结纸序全端软件官网与配套的验收范围](https://github.com/The-Ignorant-Person/todo-app/issues/5) 的后续对话使用；已确认决定以该票评论为准。本工作表是可修改的审阅资产，不是第二份决策库，也不是已通过的验收报告。
 
+Q1–Q13 已有分轮确认，详情链接在对应段落。下一步审阅 [按端能力与验收路径提案](platform-capability-matrix.md) 的 Q14–Q16；该矩阵中的新分配尚未批准。
+
 依据：项目本地的 `docs/product/baseline-draft.md`、`docs/research/dida-web-observations.md`，以及可公开访问的 [首轮全端证据矩阵](https://github.com/The-Ignorant-Person/todo-app/blob/32521bda5e8e5208b1b49b8b9471c8aaf84f1817/docs/research/paperdo-reference-20261016.md)。本地文档尚未随本资产发布，不提供失效相对链接。下面的“检查”是拟定方法，不表示已操作或参照产品必然采用这些细节。
 
 ## 如何审阅
@@ -61,7 +63,7 @@
 
 ## 本轮尚未冻结的范围问题
 
-1. 各主客户端的最低系统、CPU 架构、Linux 发行版、Web 浏览器版本，以及穿戴型号／系统清单：公开可核实部分继续调查；不能借候选框架限制擅自删除已约定平台。
+1. 系统下限、架构、Linux 版本目标与穿戴候选池已经分轮确认；仍需把浏览器支持窗口实例化，并锁定必要的镜像／固件／手机配对证据。不能借候选框架限制擅自删除已约定平台。
 2. 已纳入范围的本地模式、一次性导入、邮件插件，仍需明确适用端／宿主；具体领域语义在后续领域票细化，不能因已确认功能范围而视为行为已完整确定。
 3. 上述表仅列到了能力族；未经逐端展开、处理未决项及用户审阅，不能作为本票完成依据。
 
@@ -95,7 +97,7 @@
 | Q8 Windows 架构 | Windows 10／11，x86（32 位）、x64、ARM64 均保留为首发目标；系统和架构不是任意交叉组合，具体有效组合、版本与版本分支仍需下钻 | 与参照三个下载入口一致；每个实际存在的系统／架构组合独立验收安装、启动、升级、快捷入口和提醒。保留 x86 会缩小技术选择，不能用即将停止维护的框架版本作为长期默认方案 |
 | Q9 Web 与扩展 | Web 支持 Chrome、Edge、Firefox、Safari；基线冻结时各最近两个稳定主版本，加仍维护的 Firefox ESR。扩展独立覆盖 Chrome／Edge／Firefox，邮件插件另列 | 固定清单记录实际版本、操作系统与日期；不由原生客户端下限推导 Web 支持。Safari 桌面与 iPhone／iPad 各自验证；不额外声称 Safari 扩展在参照范围内 |
 
-Android、HarmonyOS、Linux 和穿戴设备组合尚未提出最终完整版本清单，继续补证后提出明确目标；当前 Q7–Q9 不能作为全部兼容范围冻结依据。
+Android、HarmonyOS、Linux 版本目标及穿戴候选池已在 Q10–Q13 确认，详见下文；具体设备与运行组合仍有待补证项。任何一轮确认都不表示整套纸序已经验收。
 
 Windows 架构更正：[微软 FAQ](https://support.microsoft.com/en-us/windows/experience/compatibility/32-bit-and-64-bit-windows-frequently-asked-questions)明确 Windows 11 没有 32 位操作系统版本。因此 Q8 的有效 OS／CPU 目标为 Windows 10 x86、x64、ARM64，以及 Windows 11 x64、ARM64；具体系统版本分支继续锁定。32 位应用在 64 位系统上的运行属于另一条兼容路径，不能叫作 Windows 11 x86 操作系统。
 
@@ -110,11 +112,13 @@ Windows 架构更正：[微软 FAQ](https://support.microsoft.com/en-us/windows/
 
 上述仅为范围取舍所需事实，不选择产品框架，不等于依赖已获准进入产品。
 
-## 下一轮移动与 Linux 兼容选择（Q10–Q12，尚待确认）
+## 已确认移动与 Linux 兼容目标（Q10–Q12）
+
+以下目标已由用户接受，决定详见 [第四轮确认](https://github.com/The-Ignorant-Person/todo-app/issues/5#issuecomment-6228375294)。证据限制仍保留。
 
 ### Q10 Android
 
-建议首发以 **Android 8.0／API 26 起，ARM32／ARM64，手机和平板**为目标；不把 x64 模拟器成功当成 Android x64 用户设备支持。这是纸序自己的最低版本提案，滴答最低版本仍未知。
+首发以 **Android 8.0／API 26 起，ARM32／ARM64，手机和平板**为目标；不把 x64 模拟器成功当成 Android x64 用户设备支持。这是纸序自己的最低版本选择，滴答最低版本仍未知。
 
 取舍：与 Android 7.0／API 24 起相比，少维护通知渠道之前和小组件固定入口之前的路径，但排除了 Android 7.x。API 24 仍有框架候选可支持；降低维护分支是建议理由，不是宣称 Android 7 无法实现离线任务。Android 9／API 28 会进一步排除 8.x，当前没有必须如此的功能证据。
 
@@ -122,7 +126,7 @@ Windows 架构更正：[微软 FAQ](https://support.microsoft.com/en-us/windows/
 
 ### Q11 原生 HarmonyOS
 
-建议保留 **HarmonyOS 5.0.0／API 12 起，原生手机和平板应用**为兼容目标。较新 API 的专属能力单独判断，低版本提供明确不可用提示或可接受替代；必需能力无法降级时须携证据回来决策，不能静默提高安装下限。
+保留 **HarmonyOS 5.0.0／API 12 起，原生手机和平板应用**为兼容目标。较新 API 的专属能力单独判断，低版本提供明确不可用提示或可接受替代；必需能力无法降级时须携证据回来决策，不能静默提高安装下限。
 
 官方区分最低兼容、编译、目标 SDK；较新 SDK 编译仍可以声明较低兼容目标，但不证明所用组件或每项能力都可运行。[配置说明及 5.0.0(12) 示例](https://developer.huawei.com/consumer/cn/doc/doccenter-release-notes/overview-511-beta1)、[工程配置](https://developer.huawei.com/consumer/cn/doc/HarmonyOS-Guides/ide-hmos-hvigor-build-profile-app)。API 17（5.0.5）或 API 20（6.0.0）可作为更窄覆盖的备选，本轮不自动选择。
 
@@ -130,11 +134,11 @@ Windows 架构更正：[微软 FAQ](https://support.microsoft.com/en-us/windows/
 
 ### Q12 Linux：按桌面系统逐行承诺
 
-建议保留 x64 和 ARM64 两类目标，但只对明确的“发行版＋版本＋桌面环境＋CPU／机型”组合建承诺，不用 deb／rpm／AppImage 格式推导任意 Linux 均兼容。
+保留 x64 和 ARM64 两类目标，但只对明确的“发行版＋版本＋桌面环境＋CPU／机型”组合建承诺，不用 deb／rpm／AppImage 格式推导任意 Linux 均兼容。
 
-首发候选：
+已选首发版本目标及仍需落实的验证配置：
 
-| 桌面系统 | 建议纳入的版本 | ARM64 及证据边界 |
+| 桌面系统 | 已选版本目标及当前参考修订 | ARM64 及证据边界 |
 | --- | --- | --- |
 | Ubuntu Desktop | 22.04 LTS、24.04 LTS、26.04.1 LTS | 26.04.1 有明确 ARM64 桌面下载；旧两代特定 ARM 桌面镜像尚待锁定。[官方桌面下载](https://ubuntu.com/download/desktop)、[生命周期](https://ubuntu.com/about/release-cycle) |
 | Debian + GNOME | 12 LTS、13.7 | amd64、arm64；必须安装桌面后验收通知／托盘等，服务器安装不代替桌面验收。[版本总表](https://www.debian.org/releases/) |
@@ -144,11 +148,11 @@ Windows 架构更正：[微软 FAQ](https://support.microsoft.com/en-us/windows/
 | 统信 UOS 桌面专业版 | V25，以 2500 为候选基线，实际镜像修订待锁定 | AMD64、ARM64；ARM 先以官方列明的飞腾 D2000 为验证候选。未购买镜像或许可。[官方知识库](https://faq.uniontech.com/desktopv25/e27f/1261) |
 | 银河麒麟桌面 | V11（2603 Update1） | x64 Intel／AMD、飞腾桌面版本；飞腾具体机型／位宽元数据待核对，不借用服务器版鲲鹏／ARM64条目。[官方下载](https://www.kylinos.cn/support/trial/download/) |
 
-这些是系统覆盖候选，不是镜像或硬件已准备好。旧 Ubuntu、UOS、麒麟的精确镜像与 ARM 组合还需补证；未经锁定和用户审阅不得把全部 ARM 设备算作已冻结。UOS／银河麒麟均指桌面产品；不扩大到服务器版、龙芯／申威等其他 CPU 或所有同名发行版。未在当前表中选择的旧版仍作为范围调查差异记录，不能宣称参照已不支持。
+这些是已选系统覆盖目标，不是镜像或硬件已准备好。表中的镜像修订与具体机型仍有候选项，不能升级为用户已逐项批准的硬件清单。旧 Ubuntu、UOS、麒麟的精确镜像与 ARM 组合还需补证；未经锁定和用户审阅不得把全部 ARM 设备算作已冻结。UOS／银河麒麟均指桌面产品；不扩大到服务器版、龙芯／申威等其他 CPU 或所有同名发行版。未在当前表中选择的旧版仍作为范围调查差异记录，不能宣称参照已不支持。
 
-## Q13 穿戴候选与配对边界（尚待确认）
+## Q13 已选穿戴候选池与配对边界
 
-建议继续覆盖 Apple Watch、华为和小米已有参照范围，把下面官方页面中明确出现的设备池纳入首发候选，并逐型号、固件、配对手机核对。**设备池不是滴答逐机兼容事实，也不是纸序已测试名单。** 不因为减少验证工作而直接删掉页面中较新的型号；同样不把页面适用系列外推到所有历史或未来型号。
+用户已确认把下面 Apple Watch、华为和小米设备池纳入首发候选，并逐型号、固件、配对手机核对，详见 [第四轮确认](https://github.com/The-Ignorant-Person/todo-app/issues/5#issuecomment-6228375294)。**设备池不是滴答逐机兼容事实，也不是纸序已测试名单。** 不因为减少验证工作而直接删掉页面中较新的型号；同样不把页面适用系列外推到所有历史或未来型号。
 
 | 设备池 | 本轮官方资料中的范围 | 必须保留的限制 |
 | --- | --- | --- |
@@ -160,7 +164,7 @@ Windows 架构更正：[微软 FAQ](https://support.microsoft.com/en-us/windows/
 | 华为 WATCH／Ultimate | WATCH 5、6、6 Pro、十周年款、Ultimate 2、ULTIMATE DESIGN 紫金／星钻绽放 | 滴答行明确为非独立应用，手机范围写“HarmonyOS 4.X 以下设备／第三方安卓设备”；不能把手表系统支持当成手机配对支持。[WATCH 列表](https://consumer.huawei.com/cn/support/content/zh-cn16053381/) |
 | 小米 | Watch S1、S1 Pro、Color 2 | 三款产品声明均点名滴答，第三方应用限 Android 手机；整表可配 iPhone 不代表第三方应用可用。[S1](https://www.mi.com/xiaomiwatchs1)、[S1 Pro](https://www.mi.com/xiaomiwatchs1pro)、[Color 2](https://www.mi.com/xiaomiwatchcolor2) |
 
-配对建议：Apple Watch 按 iPhone 路线；小米三款按 Android 路线；华为逐型号核对 Android／旧鸿蒙手机组合，原生 HarmonyOS 5+ 手机和 iOS 的未知分支继续保留待补证，不承诺所有型号能任意配对，也不把未验证自动写成不适用。
+已确认的配对处理：Apple Watch 按 iPhone 路线；小米三款按 Android 路线；华为逐型号核对 Android／旧鸿蒙手机组合，原生 HarmonyOS 5+ 手机和 iOS 的未知分支继续保留待补证，不承诺所有型号能任意配对，也不把未验证自动写成不适用。
 
 手表独立应用与手机通知转发分别验收。任务显示、同步、到时振动、断连／恢复是拟定的基础用例；新建、完成、编辑、离线缓存、独立联网及手表组件按各端证据和纸序预期分别定案，不能因表内未列就删除，也不要求每款表具备全部手机功能。
 
