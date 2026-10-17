@@ -1,6 +1,8 @@
 # 纸序范围收尾提案
 
-2026-10-17。**Q17–Q20 待用户确认**，不是既定决定或实现报告。所属决策：[冻结纸序全端软件官网与配套的验收范围](https://github.com/The-Ignorant-Person/todo-app/issues/5)。Q1–Q16 不重问。补充事实来自官方公开页面；未登录外部服务、获取用户数据、购买或实机测试。
+2026-10-17。**Q17–Q20 已由用户接受，范围目标基线已确认**。权威决定及后续责任见 [范围决策结论](https://github.com/The-Ignorant-Person/todo-app/issues/5#issuecomment-6231302779)。下文保留审阅时的推荐措辞以便追溯，不再等待本轮选择，也不是实现报告。补充事实来自官方公开页面；未登录外部服务、获取用户数据、购买或实机测试。
+
+后续由 [支持证据核实](https://github.com/The-Ignorant-Person/todo-app/issues/14) 和 [支持名单与兼容例外审定](https://github.com/The-Ignorant-Person/todo-app/issues/15) 承接 Q20；名单审定原生阻塞架构选择及最终规格。当前未证明具体设备、服务或输入已通过产品验收。
 
 ## Q17 日历方向
 
