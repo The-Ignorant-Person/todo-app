@@ -346,6 +346,29 @@
         "pending_changes": 8,
         "renamed_task_visible": true
       }
+    },
+    {
+      "name": "rebuilt-home",
+      "evidence_id": "ev_61b323fb1cfe24439d8863d6c6efa332b58fd6df28be4adfefa3b6b132f5b583",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "cleanup": "terminated-owned-process",
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "home-ready",
+          "status": "completed",
+          "error": null
+        }
+      ]
     }
   ]
 }
