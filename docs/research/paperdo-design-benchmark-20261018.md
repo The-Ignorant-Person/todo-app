@@ -17,10 +17,9 @@
 | `ev_9bfbb2ea0d654d8ec70dedeae8fa11552d454d1b990d39fbbbf9654dff425df5` | 不完整；定位器匹配到三个链接而失败 | 保留失败，不算滴答产品缺陷 |
 | `ev_9a9deb6c40a9fbbf4ae3544056243c6e4bec515ca1c903ee021e82dd19c7fd7f` | 功能页、帮助页各步骤完成，无截断 | 官方公开页面内容及结构 |
 | `ev_0bfb8c7ed6333cc0a5237d488761733b05173e5138f322052b8f0799f3866c81` | 在帮助输入「添加任务」后出现结果列表 | 直接观察搜索反馈、摘要与关键词高亮 |
-
 | `ev_12058b41c4325dab9f0206f38fec97e7243f42644ed91e435873ac1443d370e4` | 纸序离线添加、完成、撤销六步动作全部完成 | 合成任务恢复为未完成，待同步变更数为 3 |
 
-上述运行均报告 `terminated-owned-process`。可公开的步骤结果及截图/文本摘要哈希见 [REA 证据索引](evidence/rea-design-20261018.json)。原始网页文本、截图与完整捕获留在本机 `.local/wayfinder/` 和 `output/playwright/`，不发布第三方整页内容。旧的已登录 Web 观察另见 本地 `docs/research/dida-web-observations.md`，不冒充本次重测。
+上述运行均报告 `terminated-owned-process`。可公开的步骤结果及截图/文本摘要哈希见 [REA 证据索引](evidence/rea-design-20261018.json)。原始网页文本、截图与完整捕获留在本机 `.local/wayfinder/` 和 `output/playwright/`，不发布第三方整页内容。旧的已登录 Web 观察另见本地 `docs/research/dida-web-observations.md`，不冒充本次重测。
 
 ## 观察与取舍
 
