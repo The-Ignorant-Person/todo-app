@@ -1,0 +1,351 @@
+{
+  "date": "2026-10-18",
+  "scope": "Official public UI reference plus local synthetic prototype scenarios. Not authenticated Dida execution capture.",
+  "captures": [
+    {
+      "name": "reference-ui",
+      "evidence_id": "ev_2d0b3312088980525ccec59b1f0f5f7443590c68a398bd2795f08041fe806936",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "cleanup": "terminated-owned-process",
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "official-ui-reference",
+          "status": "completed",
+          "error": null
+        }
+      ],
+      "screenshot_sha256": "5c649ff97c10363e162b7aa693a32896d91b3b56c7c091fbf0ac37432b60cd5b"
+    },
+    {
+      "name": "rebuilt-desktop",
+      "evidence_id": "ev_b0535a0af208587921c01a6a589bb17f91f29e13457e718368bfff1659ca1087",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "cleanup": "terminated-owned-process",
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "desktop-ready",
+          "status": "completed",
+          "error": null
+        }
+      ],
+      "screenshot_sha256": "4c7a79894036843fce3507b8af188f39d7e612d67c89b235c88f0e4cee6ffe11"
+    },
+    {
+      "name": "rebuilt-flow",
+      "evidence_id": "ev_0b357e074af764c724768684f0e5a6efd3241519ead3e1f8c7f78f1d2d83a24f",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "cleanup": "terminated-owned-process",
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "open-controls",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "offline",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "hide-controls",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "write-task",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "save-task",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "complete",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "undo",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "open-detail",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "edit-note",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "save-note",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "new-checklist",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "save-checklist",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "check-item",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "date-picker",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "edit-date",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "confirm-date",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "close-detail",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "next-days",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "task-in-week",
+          "status": "completed",
+          "error": null
+        }
+      ],
+      "screenshot_sha256": "9b8f40a53945d9e889e6fe2012b7ac65b53f6ff1ce28c92c0adc5c000a3e354e"
+    },
+    {
+      "name": "rebuilt-mobile",
+      "evidence_id": "ev_e2f12e951a0e685ff689bba7c9a86cd8ec2c55569fd7b11f34187089ed422b75",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "cleanup": "terminated-owned-process",
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "open-detail",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "mobile-dialog",
+          "status": "completed",
+          "error": null
+        }
+      ],
+      "screenshot_sha256": "17b6359b97c365c71b5b97e63b1ee012431fdbc54c45671f08b4422b8872bebb"
+    },
+    {
+      "name": "rebuilt-flow-v2",
+      "evidence_id": "ev_bcbb8c4882edbfcd39f2278a2b550f3a0c344d2291fbdc4755a72020b44f06ff",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "cleanup": "terminated-owned-process",
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "open-controls",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "offline",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "hide-controls",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "write-task",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "save-task",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "complete",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "undo",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "open-detail",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "edit-note",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "save-note",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "new-checklist",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "save-checklist",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "check-item",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "date-picker",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "edit-date",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "confirm-date",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "close-detail",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "next-days",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "task-in-week",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "reopen-result",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "rename-task",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "rename-visible",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "close-renamed",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "open-search",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "search-note",
+          "status": "completed",
+          "error": null
+        },
+        {
+          "id": "note-search-found",
+          "status": "completed",
+          "error": null
+        }
+      ],
+      "final_observation": {
+        "matching_tasks": 1,
+        "checklist": "1/1",
+        "pending_changes": 8,
+        "renamed_task_visible": true
+      }
+    }
+  ]
+}

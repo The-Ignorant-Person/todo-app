@@ -1,5 +1,7 @@
 # 纸序统一品牌体验：选定自适应工作台
 
+> 已被用户否定的历史版本。当前工作区已依据滴答参考重做，见 [重做记录](../../research/paperdo-workspace-rebuild-20261018.md)。下文检查与选定结论只描述旧版。
+
 2026-10-18，对应 [验证纸序应用官网及配套的统一品牌体验](https://github.com/The-Ignorant-Person/todo-app/issues/8)。
 
 ## 当前决定
