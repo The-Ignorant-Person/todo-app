@@ -3,6 +3,7 @@ import http from 'node:http';
 import fs from 'node:fs';
 const root = new URL('../', import.meta.url);
 const routes = new Map([
+  ['/docs/product/prototypes/brand-workspace.js', ['docs/product/prototypes/brand-workspace.js', 'text/javascript; charset=utf-8']],
   ['/docs/product/prototypes/brand-unified-prototype.html', ['docs/product/prototypes/brand-unified-prototype.html', 'text/html; charset=utf-8']],
   ['/docs/product/prototypes/brand-unified-base.css', ['docs/product/prototypes/brand-unified-base.css', 'text/css; charset=utf-8']],
   ['/docs/product/prototypes/brand-unified.css', ['docs/product/prototypes/brand-unified.css', 'text/css; charset=utf-8']],

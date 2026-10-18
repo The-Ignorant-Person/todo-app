@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-18",
+  "tool": "Playwright 1.64.1 and axe-core/playwright 4.13.0; local Edge",
+  "scope": "Throwaway synthetic prototype only",
+  "checks": [
+    {
+      "check": "default details closed",
+      "pass": true
+    },
+    {
+      "check": "N capture",
+      "pass": true
+    },
+    {
+      "check": "add",
+      "pass": true
+    },
+    {
+      "check": "undo completion",
+      "pass": true
+    },
+    {
+      "check": "draft retained",
+      "pass": true
+    },
+    {
+      "check": "single offline edit",
+      "observed": "离线 · 1 项变更待同步",
+      "pass": true
+    },
+    {
+      "check": "search note",
+      "observed": [
+        "原型验收任务生活 · 今天"
+      ],
+      "note": {
+        "id": 10,
+        "title": "原型验收任务",
+        "list": "生活",
+        "time": "",
+        "note": "关闭后仍在的草稿",
+        "done": false
+      },
+      "pass": true
+    },
+    {
+      "check": "search empty",
+      "pass": true
+    },
+    {
+      "check": "home mobile no overflow",
+      "pass": true
+    },
+    {
+      "check": "app mobile no overflow",
+      "pass": true
+    },
+    {
+      "check": "help mobile no overflow",
+      "pass": true
+    },
+    {
+      "check": "membership mobile no overflow",
+      "pass": true
+    },
+    {
+      "check": "mobile modal",
+      "pass": true
+    },
+    {
+      "check": "modal escape restores focus",
+      "pass": true
+    },
+    {
+      "check": "empty distinct",
+      "pass": true
+    },
+    {
+      "check": "error distinct",
+      "pass": true
+    },
+    {
+      "check": "help search",
+      "pass": true
+    },
+    {
+      "check": "purchase unavailable",
+      "pass": true
+    },
+    {
+      "check": "home to app",
+      "pass": true
+    },
+    {
+      "check": "common help phrase",
+      "pass": true
+    },
+    {
+      "check": "help to membership",
+      "pass": true
+    },
+    {
+      "check": "detail fits 320",
+      "pass": true
+    },
+    {
+      "check": "detail fits 768",
+      "pass": true
+    },
+    {
+      "check": "detail fits 900",
+      "pass": true
+    },
+    {
+      "check": "detail fits 901",
+      "pass": true
+    },
+    {
+      "check": "detail fits 1024",
+      "pass": true
+    },
+    {
+      "check": "detail fits 1280",
+      "pass": true
+    },
+    {
+      "check": "dialog background focus blocked",
+      "pass": true
+    },
+    {
+      "check": "mobile note save",
+      "pass": true
+    }
+  ],
+  "axe": [
+    {
+      "scene": "home",
+      "violations": []
+    },
+    {
+      "scene": "app",
+      "violations": []
+    },
+    {
+      "scene": "help",
+      "violations": []
+    },
+    {
+      "scene": "membership",
+      "violations": []
+    },
+    {
+      "scene": "mobile-dialog",
+      "violations": []
+    }
+  ],
+  "pageErrors": [],
+  "limitations": [
+    "Not full accessibility certification",
+    "No actual persistence, offline sync, billing or device tests"
+  ],
+  "diagnosticCorrections": [
+    "Fixed page data attribute matching scene navigation, which cancelled native form submission",
+    "Native dialog allows focus to browser chrome; background controls remain inert"
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "date": "2026-10-18",
+  "scope": "Public Dida feature page and help search only; not authenticated product or source reverse engineering; plus synthetic Paperdo offline add, complete and undo replay",
+  "captures": [
+    {
+      "evidence_id": "ev_9bfbb2ea0d654d8ec70dedeae8fa11552d454d1b990d39fbbbf9654dff425df5",
+      "scenario_sha256": "a09b0cb78a5d91d1279e5127b634915cff7ce61cbe6deb3acb63e528a7ab8314",
+      "operation": "capture_browser_scenario",
+      "completeness": {
+        "status": "incomplete",
+        "equality_eligible": false,
+        "missing_sections": [
+          "accessibility",
+          "action",
+          "dom",
+          "screenshot",
+          "url"
+        ],
+        "truncated_sections": []
+      },
+      "cleanup": "terminated-owned-process",
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed",
+          "error": null,
+          "url": "https://dida365.com/features?language=zh_CN",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "e7ca11ca94e191316a3dee8ce90f4eb01a4f959df36811a72c194b46883dec80",
+              "bytes": 7880
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "feature-ready",
+          "status": "failed",
+          "error": "Locator strict mode violation: three matching feature links; replaced by a unique heading for the second capture.",
+          "url": "https://dida365.com/features?language=zh_CN",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "e7ca11ca94e191316a3dee8ce90f4eb01a4f959df36811a72c194b46883dec80",
+              "bytes": 7880
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "help-page",
+          "status": "cancelled",
+          "error": "not executed after an earlier action failure",
+          "url": "https://dida365.com/features?language=zh_CN",
+          "artifacts": {}
+        },
+        {
+          "id": "help-search-ready",
+          "status": "cancelled",
+          "error": "not executed after an earlier action failure",
+          "url": "https://dida365.com/features?language=zh_CN",
+          "artifacts": {}
+        }
+      ]
+    },
+    {
+      "evidence_id": "ev_9a9deb6c40a9fbbf4ae3544056243c6e4bec515ca1c903ee021e82dd19c7fd7f",
+      "scenario_sha256": "fb623bf0be0fe11b52d2063211bb4c1a64d8e1d0cf69d59d6ee5af35168828fe",
+      "operation": "capture_browser_scenario",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "cleanup": "terminated-owned-process",
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed",
+          "error": null,
+          "url": "https://dida365.com/features?language=zh_CN",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "e7ca11ca94e191316a3dee8ce90f4eb01a4f959df36811a72c194b46883dec80",
+              "bytes": 7880
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "feature-ready",
+          "status": "completed",
+          "error": null,
+          "url": "https://dida365.com/features?language=zh_CN",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "e7ca11ca94e191316a3dee8ce90f4eb01a4f959df36811a72c194b46883dec80",
+              "bytes": 7880
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "help-page",
+          "status": "completed",
+          "error": null,
+          "url": "https://help.dida365.com/",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "a525f61f4788864011ec0696f947dbfefa8ed8f927777b9ef44c684f3ef64a3c",
+              "bytes": 4993
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "help-search-ready",
+          "status": "completed",
+          "error": null,
+          "url": "https://help.dida365.com/",
+          "artifacts": {
+            "screenshot": {
+              "sha256": "e6e3639237039887cd39131002cee43ed75508eb26f709c9d1edece1251106fd",
+              "bytes": 97208
+            },
+            "dom": {
+              "sha256": "5b67389eb84f5312ae9e640609969d8c42305b2cfbdf1243f0fc34cb5add15fb",
+              "bytes": 1211803
+            },
+            "accessibility": {
+              "sha256": "a525f61f4788864011ec0696f947dbfefa8ed8f927777b9ef44c684f3ef64a3c",
+              "bytes": 4993
+            },
+            "url": {}
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "ev_0bfb8c7ed6333cc0a5237d488761733b05173e5138f322052b8f0799f3866c81",
+      "scenario_sha256": "50be7f377830b89634381e4a62ec58d13ab1a7dc48dd3322f0438a3578bc9509",
+      "operation": "capture_browser_scenario",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "cleanup": "terminated-owned-process",
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed",
+          "error": null,
+          "url": "https://help.dida365.com/",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "a525f61f4788864011ec0696f947dbfefa8ed8f927777b9ef44c684f3ef64a3c",
+              "bytes": 4993
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "search-ready",
+          "status": "completed",
+          "error": null,
+          "url": "https://help.dida365.com/",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "a525f61f4788864011ec0696f947dbfefa8ed8f927777b9ef44c684f3ef64a3c",
+              "bytes": 4993
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "search-add-task",
+          "status": "completed",
+          "error": null,
+          "url": "https://help.dida365.com/",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "0de788f6a0a69afbf3dafaf95cce70aec872bfed3ff26c1fd9903dc218f423e1",
+              "bytes": 110315
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "search-results",
+          "status": "completed",
+          "error": null,
+          "url": "https://help.dida365.com/",
+          "artifacts": {
+            "screenshot": {
+              "sha256": "8234b87c5459ea7dad05bce9c2fcd8be2e561b81f2be442cde71b6c25e1631ec",
+              "bytes": 134069
+            },
+            "dom": {
+              "sha256": "21dd2fda848d25808d21959929ebe6613bb74907b6c16656776ea9c034d0fd5d",
+              "bytes": 1332852
+            },
+            "accessibility": {
+              "sha256": "0de788f6a0a69afbf3dafaf95cce70aec872bfed3ff26c1fd9903dc218f423e1",
+              "bytes": 110315
+            },
+            "url": {}
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "ev_12058b41c4325dab9f0206f38fec97e7243f42644ed91e435873ac1443d370e4",
+      "scenario_sha256": "4c05fea74d708b2facdfb59fcc81f749a6ae4bed186886692cac7d0f88a3b850",
+      "operation": "capture_browser_scenario",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "cleanup": "terminated-owned-process",
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed",
+          "error": null,
+          "url": "http://127.0.0.1:4178/docs/product/prototypes/brand-unified-prototype.html?scene=app",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "562cfb24c6f2102b7b95bc3ab2d674351c7ee721a5ccc5c38cb366f45eddb3df",
+              "bytes": 2348
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "offline",
+          "status": "completed",
+          "error": null,
+          "url": "http://127.0.0.1:4178/docs/product/prototypes/brand-unified-prototype.html?scene=app",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "1b35273711b52defea806873ec27154d54ef5e6db96621d970ab0fb453fa425d",
+              "bytes": 2467
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "capture-task",
+          "status": "completed",
+          "error": null,
+          "url": "http://127.0.0.1:4178/docs/product/prototypes/brand-unified-prototype.html?scene=app",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "d71c0a4d4eb61374fca3eeb4adfd3b6192becf0c7e78e8bf0fb21e3336757d41",
+              "bytes": 2504
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "save-task",
+          "status": "completed",
+          "error": null,
+          "url": "http://127.0.0.1:4178/docs/product/prototypes/brand-unified-prototype.html?scene=app",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "38d8baf7269fb3cef240e16fd9fcc90b11b4d983f47793eb6f0a0f2efcaca8c1",
+              "bytes": 2661
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "complete-task",
+          "status": "completed",
+          "error": null,
+          "url": "http://127.0.0.1:4178/docs/product/prototypes/brand-unified-prototype.html?scene=app",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "f1bbf8c8097e5ff07f71d07e0ca0e43c35796342a42533934fbd7bf196ccbd6f",
+              "bytes": 2553
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "undo-completion",
+          "status": "completed",
+          "error": null,
+          "url": "http://127.0.0.1:4178/docs/product/prototypes/brand-unified-prototype.html?scene=app",
+          "artifacts": {
+            "accessibility": {
+              "sha256": "1d6a0a19e16d6b91ae0d87a6620cd2ed872d0b2fedc013901a2c604935a2de01",
+              "bytes": 2660
+            },
+            "url": {}
+          }
+        },
+        {
+          "id": "result-ready",
+          "status": "completed",
+          "error": null,
+          "url": "http://127.0.0.1:4178/docs/product/prototypes/brand-unified-prototype.html?scene=app",
+          "artifacts": {
+            "screenshot": {
+              "sha256": "13a44fc595cbc0050bc84fa53934b2bb4676ee948409d10ae14964a0e1846236",
+              "bytes": 67281
+            },
+            "dom": {
+              "sha256": "7ffca940d583c24a6aa9eb31a1973d835607f6b09391c569e6f7232ce4a258f7",
+              "bytes": 6888
+            },
+            "accessibility": {
+              "sha256": "1d6a0a19e16d6b91ae0d87a6620cd2ed872d0b2fedc013901a2c604935a2de01",
+              "bytes": 2660
+            },
+            "url": {}
+          }
+        }
+      ]
+    }
+  ]
+}

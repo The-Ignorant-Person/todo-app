@@ -1,10 +1,11 @@
 <!doctype html>
-<!-- THROWAWAY: A layout selected by the user; website/help/membership remain under review. -->
+<!-- THROWAWAY: agent-selected adaptive workspace, re-evaluated against Dida using REA. -->
 <html lang="zh-CN">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>纸序 · 统一品牌体验原型</title><link rel="icon" href="data:,"><link rel="stylesheet" href="brand-unified-base.css"><link rel="stylesheet" href="brand-unified.css"></head>
 <body>
 <a class="skip" href="#main">跳到主要内容</a>
-<div class="lab"><strong>A 方案 · 体验原型</strong><span class="explain">示例数据仅当前页面有效；非上线产品。</span><span class="spacer"></span><label for="state-demo">预览状态</label><select id="state-demo"><option value="normal">正常</option><option value="offline">离线</option><option value="empty">空清单</option><option value="loading">加载中</option><option value="error">加载失败</option></select><button class="outline" id="reset">重置示例</button></div>
+<div class="lab" role="region" aria-label="原型演示控制"><strong>纸序 · 决策原型</strong><span class="explain">示例数据仅当前页面有效；非上线产品。</span><span class="spacer"></span><label for="state-demo">预览状态</label><select id="state-demo"><option value="normal">正常</option><option value="offline">离线</option><option value="empty">空清单</option><option value="loading">加载中</option><option value="error">加载失败</option></select><button class="outline" id="reset">重置示例</button></div>
 <div id="root"></div><div class="toast" role="status" aria-live="polite" id="notice"></div>
 <script src="brand-unified.js"></script>
+<script src="brand-workspace.js"></script>
 </body></html>
