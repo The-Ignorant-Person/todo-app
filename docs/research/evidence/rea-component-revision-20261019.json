@@ -1,0 +1,389 @@
+{
+  "date": "2026-10-19",
+  "entries": [
+    {
+      "name": "rea-home-interaction",
+      "evidence_id": "ev_5e98ea581d2fc7ecd4461cff931dc1e3ca08f4a2ba4e752ca96ff85d80f183da",
+      "sha256": "1d70cd19f5a2863ff61972af47c93487eecc1eaf4ff1914f984dd96287206eb9",
+      "operation": "capture_browser_scenario",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed"
+        },
+        {
+          "id": "app-body",
+          "status": "completed"
+        }
+      ],
+      "cleanup": "terminated-owned-process",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "name": "rea-dida-home-static",
+      "evidence_id": "ev_8e52a9bd4835c4b40995ac4ca15a8b746d46f8ccd87faee08d8f4bbb646b97cf",
+      "sha256": "0afbdbe63cf505e9f20cc561435f286dbdd467a1a072954371142eac12cdde71",
+      "operation": "analyze_javascript_application",
+      "completeness": {
+        "graph": {
+          "status": "partial",
+          "truncated": false,
+          "omitted_count": null,
+          "limits": []
+        },
+        "semantic": {
+          "status": "partial",
+          "truncated": true,
+          "limits": [
+            {
+              "name": "semantic_graph_file_node_ceiling",
+              "value": 20000,
+              "unit": "items"
+            },
+            {
+              "name": "semantic_graph_node_ceiling",
+              "value": 12000,
+              "unit": "items"
+            }
+          ]
+        }
+      },
+      "statistics": {
+        "relevant_files": 2,
+        "nested_asar_containers": 0,
+        "text_bytes_read": 420775,
+        "invalid_utf8_files": 0,
+        "parsed_javascript_files": 2,
+        "visited_ast_nodes": 26588,
+        "findings": 100,
+        "modules": 34,
+        "parse_failures": 0
+      },
+      "limitations": [
+        "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+        "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+        "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+        "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+        "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+        "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+      ]
+    },
+    {
+      "name": "rea-components-desktop-v2",
+      "evidence_id": "ev_f27ce640cc2a23a7cfb391ea5cbb2a141d7a484ba1616c663af33f6d37975c22",
+      "sha256": "bdea2d117a394b7c279c95b9f3c35a083bdf74428822f6c584284f8a65decd54",
+      "operation": "capture_browser_scenario",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed"
+        },
+        {
+          "id": "rendered",
+          "status": "completed"
+        }
+      ],
+      "cleanup": "terminated-owned-process",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "name": "rea-components-home-v2",
+      "evidence_id": "ev_de0de69ef54bf0657c49c83652d506f306b846a987103db6e07b9c30c9fd5fac",
+      "sha256": "359569465984d8fad18589c329ee8ae14291e24ca0d7951f931b714ff9c81f54",
+      "operation": "capture_browser_scenario",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed"
+        },
+        {
+          "id": "live-preview",
+          "status": "completed"
+        }
+      ],
+      "cleanup": "terminated-owned-process",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "name": "rea-components-flow-v2",
+      "evidence_id": "ev_2a543137292ae915223da0e5845176326118f8d3f036087525c812ae32af82c0",
+      "sha256": "265fac85f4a5e32caa392f51ee1e49428154d9d3d44e4b6d8743c61ce796df44",
+      "operation": "capture_browser_scenario",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed"
+        },
+        {
+          "id": "offline-settings",
+          "status": "completed"
+        },
+        {
+          "id": "offline-toggle",
+          "status": "completed"
+        },
+        {
+          "id": "close-settings",
+          "status": "completed"
+        },
+        {
+          "id": "add-title",
+          "status": "completed"
+        },
+        {
+          "id": "submit",
+          "status": "completed"
+        },
+        {
+          "id": "created",
+          "status": "completed"
+        },
+        {
+          "id": "open",
+          "status": "completed"
+        },
+        {
+          "id": "rename",
+          "status": "completed"
+        },
+        {
+          "id": "notes",
+          "status": "completed"
+        },
+        {
+          "id": "date-open",
+          "status": "completed"
+        },
+        {
+          "id": "tomorrow",
+          "status": "completed"
+        },
+        {
+          "id": "date-closed",
+          "status": "completed"
+        },
+        {
+          "id": "subtask",
+          "status": "completed"
+        },
+        {
+          "id": "subtask-enter",
+          "status": "completed"
+        },
+        {
+          "id": "subtask-done",
+          "status": "completed"
+        },
+        {
+          "id": "close-detail",
+          "status": "completed"
+        },
+        {
+          "id": "week",
+          "status": "completed"
+        },
+        {
+          "id": "tomorrow-visible",
+          "status": "completed"
+        },
+        {
+          "id": "complete",
+          "status": "completed"
+        },
+        {
+          "id": "undo",
+          "status": "completed"
+        },
+        {
+          "id": "restored",
+          "status": "completed"
+        },
+        {
+          "id": "search",
+          "status": "completed"
+        },
+        {
+          "id": "search-text",
+          "status": "completed"
+        },
+        {
+          "id": "search-result",
+          "status": "completed"
+        },
+        {
+          "id": "open-result",
+          "status": "completed"
+        },
+        {
+          "id": "detail-return",
+          "status": "completed"
+        }
+      ],
+      "cleanup": "terminated-owned-process",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "name": "rea-components-mobile",
+      "evidence_id": "ev_518d2fba249c6bf0cb6b7f0a11b66c607ad50f5d81090fc544f4978b31a72366",
+      "sha256": "9c444678391c6c87b89fe95e25dfbe749b74bbb579c065919cd3b70acded5557",
+      "operation": "capture_browser_scenario",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed"
+        },
+        {
+          "id": "open-mobile",
+          "status": "completed"
+        },
+        {
+          "id": "dialog",
+          "status": "completed"
+        },
+        {
+          "id": "date",
+          "status": "completed"
+        },
+        {
+          "id": "calendar",
+          "status": "completed"
+        }
+      ],
+      "cleanup": "terminated-owned-process",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ]
+    },
+    {
+      "name": "rea-components-home-flow",
+      "evidence_id": "ev_7e9644c7041d9a661996c1e0466fbe3a9fac28ee9223c2a45832a3c6326461dd",
+      "sha256": "7c3d1f9fda336a9c585277e053d5ade5ddff98fb98b766b10c52d69a57ae94ec",
+      "operation": "capture_browser_scenario",
+      "completeness": {
+        "status": "complete",
+        "equality_eligible": true,
+        "missing_sections": [],
+        "truncated_sections": []
+      },
+      "steps": [
+        {
+          "id": "scenario_start",
+          "status": "completed"
+        },
+        {
+          "id": "complete-on-home",
+          "status": "completed"
+        },
+        {
+          "id": "enter",
+          "status": "completed"
+        },
+        {
+          "id": "show-completed",
+          "status": "completed"
+        },
+        {
+          "id": "same-state",
+          "status": "completed"
+        }
+      ],
+      "cleanup": "terminated-owned-process",
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+        "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+        "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+        "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+        "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+        "Storage values are hashed only after declared-secret redaction.",
+        "Browser host platform and architecture were not observed."
+      ]
+    }
+  ],
+  "source": {
+    "url": "https://cncdn.dida365.com/sites/_next/static/chunks/pages/home-4e76a91dec27367aec5d.js",
+    "sha256": "15ab4ba9dfa278509d7d8174c30597dd291add9de4bfbfb8031b2b09d7c40122",
+    "bytes": 417
+  },
+  "selectedModule": [
+    {
+      "url": "https://cncdn.dida365.com/sites/_next/static/chunks/4788-f33a45eff5097db7016a.js",
+      "bytes": 420358,
+      "sha256": "f969a2ab20f3463291abedd997ad2620636d6c6a6a73e2135c30b607c06bdfdd",
+      "containsHome": true
+    }
+  ]
+}
